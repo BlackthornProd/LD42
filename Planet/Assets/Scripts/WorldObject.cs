@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class WorldObject : MonoBehaviour {
 
-    private Animator camAnim;
     private GM gm;
     public int dangerPlanet;
     private Animator anim;
@@ -13,7 +12,6 @@ public class WorldObject : MonoBehaviour {
 
     private void Start()
     {
-        camAnim = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Animator>();
         anim = GetComponent<Animator>();
         gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GM>();
 
@@ -26,7 +24,7 @@ public class WorldObject : MonoBehaviour {
 
         if (gm.isDestroy == true) {
             if (Input.GetMouseButtonDown(0)) {
-                camAnim.SetTrigger("shake");
+                
                 gm.isDestroy = false;
                 DestroyWorldObject();
             }
@@ -45,6 +43,7 @@ public class WorldObject : MonoBehaviour {
     }
 
     void DestroyWorldObject() {
+        gm.danger -= dangerPlanet;
         Instantiate(explosion, transform.position, Quaternion.identity);
         Instantiate(destroyEffect, transform.position, Quaternion.identity);
         Destroy(gameObject);

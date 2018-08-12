@@ -157,7 +157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cbc482f98c49074db164d19f8c2e14f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startTimeBtwGold: 3
+  startTimeBtwGold: 5
   gold: 5
   human: {fileID: 1082241201751324, guid: c5341a5c59c09b445aec78c8d8fa79bb, type: 2}
 --- !u!114 &114172965268308892
@@ -171,7 +171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5e3327ae379f5d449b6d5cb36dedb6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dangerPlanet: 20
+  dangerPlanet: 10
   destroyEffect: {fileID: 1875723041205544, guid: d566f43316180f74ea5fac7ee051e220,
     type: 2}
   explosion: {fileID: 1408135833259304, guid: 3fed465332a0288498629ee113d8f7a5, type: 2}

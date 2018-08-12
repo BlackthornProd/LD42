@@ -9,102 +9,102 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1146524687978080}
+  m_RootGameObject: {fileID: 1406159052386918}
   m_IsPrefabParent: 1
---- !u!1 &1146524687978080
+--- !u!1 &1406159052386918
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4045957190501542}
-  - component: {fileID: 61563879519279456}
-  - component: {fileID: 114967277908944002}
-  - component: {fileID: 95466537360529026}
-  - component: {fileID: 114717424742895964}
+  - component: {fileID: 4898971438066422}
+  - component: {fileID: 212685399444922864}
+  - component: {fileID: 61022800071868802}
+  - component: {fileID: 114687924026958218}
+  - component: {fileID: 114541475455350670}
+  - component: {fileID: 95807755104986226}
   m_Layer: 0
-  m_Name: Castle
+  m_Name: TowerSmallGraphic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1981694259964082
+--- !u!1 &1568501936497094
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4214578449852370}
-  - component: {fileID: 212963571178761712}
+  - component: {fileID: 4373447513040000}
   m_Layer: 0
-  m_Name: CastleTowers
+  m_Name: TowerSmall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4045957190501542
+--- !u!4 &4373447513040000
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1146524687978080}
+  m_GameObject: {fileID: 1568501936497094}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.08104038, y: 0.018502235, z: -0.030860875}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4898971438066422}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4898971438066422
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1406159052386918}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.73, y: 5.99, z: -0.018121066}
+  m_LocalPosition: {x: -4.2989597, y: 9.311498, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4214578449852370}
+  - {fileID: 4373447513040000}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4214578449852370
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1981694259964082}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.13561487, y: -0.010959148, z: 0.018121066}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4045957190501542}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &61563879519279456
+--- !u!61 &61022800071868802
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1146524687978080}
+  m_GameObject: {fileID: 1406159052386918}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.17, y: 1.1}
+  m_Offset: {x: -0.12, y: 1.66}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
+    pivot: {x: 0.51661414, y: 0.14361098}
+    oldSize: {x: 2.61, y: 3.91}
+    newSize: {x: 2.61, y: 3.91}
+    adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.93, y: 2.11}
+  m_Size: {x: 1.23, y: 2.91}
   m_EdgeRadius: 0
---- !u!95 &95466537360529026
+--- !u!95 &95807755104986226
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1146524687978080}
+  m_GameObject: {fileID: 1406159052386918}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: a7860603a6173df459eebea935e9b934, type: 2}
@@ -116,41 +116,41 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114717424742895964
+--- !u!114 &114541475455350670
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1146524687978080}
+  m_GameObject: {fileID: 1406159052386918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5e3327ae379f5d449b6d5cb36dedb6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dangerPlanet: 45
+  destroyEffect: {fileID: 1875723041205544, guid: d566f43316180f74ea5fac7ee051e220,
+    type: 2}
+  explosion: {fileID: 1408135833259304, guid: 3fed465332a0288498629ee113d8f7a5, type: 2}
+--- !u!114 &114687924026958218
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1406159052386918}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3cbc482f98c49074db164d19f8c2e14f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   startTimeBtwGold: 5
-  gold: 25
+  gold: 175
   human: {fileID: 1082241201751324, guid: c5341a5c59c09b445aec78c8d8fa79bb, type: 2}
---- !u!114 &114967277908944002
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1146524687978080}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5e3327ae379f5d449b6d5cb36dedb6f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dangerPlanet: 25
-  destroyEffect: {fileID: 1875723041205544, guid: d566f43316180f74ea5fac7ee051e220,
-    type: 2}
-  explosion: {fileID: 1408135833259304, guid: 3fed465332a0288498629ee113d8f7a5, type: 2}
---- !u!212 &212963571178761712
+--- !u!212 &212685399444922864
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1981694259964082}
+  m_GameObject: {fileID: 1406159052386918}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -180,12 +180,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300004, guid: 4f74a7025492875468d0ba7113090101, type: 3}
+  m_Sprite: {fileID: 21300002, guid: 1003a5687e754904098e1daa443452d0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 3.09, y: 3.04}
+  m_Size: {x: 2.61, y: 3.91}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

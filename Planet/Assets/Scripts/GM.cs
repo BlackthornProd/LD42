@@ -32,12 +32,68 @@ public class GM : MonoBehaviour {
 
         if (danger < 100) {
             planetIndex = 0;
-        } else if (danger >= 100 && danger <= 200) {
-            if (once == false) {
-                planetAnim.SetTrigger("hurt");
-                once = true;
-            }
+        } else if (danger >= 100 && danger < 200 && once == false) {
+            planetAnim.SetTrigger("hurt");
+            once = true;
             planetIndex = 1;
+        } else if (danger >= 200 && danger < 400 && once == true) {   
+            planetAnim.SetTrigger("hurt");
+            once = false;
+            planetIndex = 2;
+        }
+        else if (danger >= 400 && danger < 600 && once == false)
+        {
+            planetAnim.SetTrigger("hurt");
+            once = true;
+            planetIndex = 3;
+        }
+        else if (danger >= 600 && danger < 800 && once == true)
+        {
+            planetAnim.SetTrigger("hurt");
+            once = false;
+            planetIndex = 4;
+        }
+        else if (danger >= 800 && danger < 900 && once == false)
+        {
+            planetAnim.SetTrigger("hurt");
+            once = true;
+            planetIndex = 5;
+        }
+        else if (danger >= 900 && danger < 1100 && once == true)
+        {
+            planetAnim.SetTrigger("hurt");
+            once = false;
+            planetIndex = 6;
+        }
+        else if (danger >= 1100 && danger < 1200 && once == false)
+        {
+            planetAnim.SetTrigger("hurt");
+            once = true;
+            planetIndex = 7;
+        }
+        else if (danger >= 1200 && danger < 1400 && once == true)
+        {
+            planetAnim.SetTrigger("hurt");
+            once = false;
+            planetIndex = 8;
+        }
+        else if (danger >= 1400 && danger < 1600 && once == false)
+        {
+            planetAnim.SetTrigger("hurt");
+            once = true;
+            planetIndex = 9;
+        }
+        else if (danger >= 1600 && danger < 1800 && once == true)
+        {
+            planetAnim.SetTrigger("hurt");
+            once = false;
+            planetIndex = 10;
+        }
+        else if (danger >= 1800 && danger < 2000 && once == false)
+        {
+            planetAnim.SetTrigger("hurt");
+            once = true;
+            planetIndex = 11;
         }
 
         planetFace.sprite = planetFaces[planetIndex];
@@ -55,11 +111,14 @@ public class GM : MonoBehaviour {
     }
 
     public void Build(int buildIndex) {
-        if (gold >= prices[buildIndex]) {
-            gold -= prices[buildIndex];
-            buildingSelected = buildIndex;
-        }
-      
+
+        if (buildingSelected == 0) {
+            if (gold >= prices[buildIndex])
+            {
+                gold -= prices[buildIndex];
+                buildingSelected = buildIndex;
+            }
+        }       
     }
 
     public void DestroySmt() {

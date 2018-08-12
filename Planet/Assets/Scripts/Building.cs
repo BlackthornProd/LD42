@@ -14,7 +14,7 @@ public class Building : MonoBehaviour {
 
     private void Start()
     {
-
+        timeBtwGold = startTimeBtwGold;
         gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GM>();
         Instantiate(human, gm.transform.position, transform.rotation);
     }

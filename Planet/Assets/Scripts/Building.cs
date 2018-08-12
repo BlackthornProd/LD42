@@ -11,6 +11,7 @@ public class Building : MonoBehaviour {
     public int gold;
 
     public GameObject human;
+    public GameObject explosion;
 
     private void Start()
     {
@@ -21,6 +22,12 @@ public class Building : MonoBehaviour {
 
     private void Update()
     {
+
+        if (gm.danger >= 2000) {
+            Instantiate(explosion, transform.position, Quaternion.identity);
+            Destroy(gameObject);
+        }
+
         if (timeBtwGold <= 0)
         {
             gm.gold += gold;

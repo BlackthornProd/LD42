@@ -11,8 +11,12 @@ public class Human : MonoBehaviour {
     int randDir;
     bool done;
 
+    private GM gm;
+
+
     private void Start()
     {
+        gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GM>();
         speed = Random.Range(minSpeed, maxSpeed);
         randDir = Random.Range(0, 2);
  
@@ -20,20 +24,28 @@ public class Human : MonoBehaviour {
 
     private void Update()
     {
-        if (randDir == 0)
+
+        if (gm.danger >= 2000)
         {
-         
-            transform.Rotate(Vector3.forward * -speed * Time.deltaTime);
+            Destroy(gameObject);
         }
         else {
-            if (done == false) {
-                transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, 1);
-                done = true;
+            if (randDir == 0)
+            {
+
+                transform.Rotate(Vector3.forward * -speed * Time.deltaTime);
             }
-           
-            transform.Rotate(Vector3.forward * speed * Time.deltaTime);
-        }
-      
+            else
+            {
+                if (done == false)
+                {
+                    transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, 1);
+                    done = true;
+                }
+
+                transform.Rotate(Vector3.forward * speed * Time.deltaTime);
+            }
+        } 
     }
 
 }

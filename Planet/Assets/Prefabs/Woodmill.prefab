@@ -71,6 +71,7 @@ GameObject:
   - component: {fileID: 61742234491164026}
   - component: {fileID: 114500036574700662}
   - component: {fileID: 114277292461206180}
+  - component: {fileID: 82011588151938666}
   m_Layer: 0
   m_Name: Woodmill
   m_TagString: Untagged
@@ -188,6 +189,101 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.33, y: 1.76}
   m_EdgeRadius: 0
+--- !u!82 &82011588151938666
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1818196767440648}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 8346d251e42023a41b66adda7b0c1f29, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.409
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!95 &95422502562789626
 Animator:
   serializedVersion: 3
@@ -217,9 +313,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cbc482f98c49074db164d19f8c2e14f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startTimeBtwGold: 5
+  startTimeBtwGold: 3
   gold: 15
   human: {fileID: 1082241201751324, guid: c5341a5c59c09b445aec78c8d8fa79bb, type: 2}
+  explosion: {fileID: 1408135833259304, guid: 3fed465332a0288498629ee113d8f7a5, type: 2}
 --- !u!114 &114500036574700662
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -232,7 +329,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dangerPlanet: 20
-  destroyEffect: {fileID: 1875723041205544, guid: d566f43316180f74ea5fac7ee051e220,
+  destroyEffect: {fileID: 1075978979770814, guid: ce1bd2f5069c57843b42e6c9c4a28930,
     type: 2}
   explosion: {fileID: 1408135833259304, guid: 3fed465332a0288498629ee113d8f7a5, type: 2}
 --- !u!212 &212117053545331506

@@ -102,6 +102,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpeed: 5
   maxSpeed: 10
+  rend: {fileID: 212228825205499946}
+  skull: {fileID: 21300000, guid: 9d078cea311150c41b261bf519eca56d, type: 3}
+  effect: {fileID: 1598578576826452, guid: 72ebc3599f2bd8449bb5a6b915ddbe44, type: 2}
+  minTime: 2
+  maxTime: 10
 --- !u!212 &212228825205499946
 SpriteRenderer:
   m_ObjectHideFlags: 1

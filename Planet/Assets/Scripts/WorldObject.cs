@@ -10,16 +10,26 @@ public class WorldObject : MonoBehaviour {
     public GameObject destroyEffect;
     public GameObject explosion;
 
+    private AudioSource source;
+
     private void Start()
     {
+        source = GetComponent<AudioSource>();
         anim = GetComponent<Animator>();
         gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GM>();
 
         gm.danger += dangerPlanet;
     }
 
+
+    private void OnMouseEnter()
+    {
+        source.Play();
+    }
+
     private void OnMouseOver()
     {
+        
         anim.SetBool("isOver", true);
 
         if (gm.isDestroy == true) {
